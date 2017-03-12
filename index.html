@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+		<script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script> 
+		<script type="text/javascript" src ="scripts/form.js"> </script>
+		<link href = "css/styles.css" rel="stylesheet" >
+		<title>PWC Form</title>
+	</head>
+
+	<body>
+		<div class="form-container">
+			<div class="form-header">
+				<h1>My Application Form</h1>
+			</div>
+			<div class="form-content">
+				<form>	
+					<div class ="form-name-field">
+						<legend>My name is </legend>
+						<input type="text" placeholder="Please enter your full name" name="nameField" required>
+					</div>
+
+					<div  class="label-option-container">
+						<legend> I find CSS </legend>
+						<ul>
+							<li>
+								<input type="radio" name ="radio-btn" value="1" id="radio1">
+								<label for='radio1'>Easy</label>
+							</li>
+							<li>
+								<input type="radio" name ="radio-btn" value="2" id="radio2" >
+								<label for='radio2'>Ocassionally Hard</label>
+							</li>
+							<li>
+								<input type="radio" name ="radio-btn" value="2" id="radio3">	
+								<label for='radio3'>Diabolical</label>
+							</li>
+						</ul>	
+					</div>
+
+					<div class="dropdown-container">
+						<legend>My favourite JavaScript library is</legend>
+						<select>
+							<option value="" disabled selected hidden> Please select ... </option>
+							<option value="0">Angular</option>
+							<option value="1">JQuery</option>
+							<option value="2">Boostrap</option>
+							<option value="3">NodeJS</option>
+							<option value="4">None</option>
+						</select>
+					</div>
+
+					<div class="checkbox-container">
+						<input type="checkbox" name="tickBox" value ="check-box" id="checkBox1" required >
+						<label for='checkBox1'>I really want to work at PwC</label>	
+					</div>	
+					<div class="btn-submit-container">	
+						<input class="btn-submit" type="submit" value="Submit">	
+					</div>	
+					<div class="form-modal">
+
+						<div class="form-modal-content">
+							<span class="close-modal">&times;</span>
+							<div class="form-modal-content-header">
+								<h2>Thank you for submitting your application!</h2>
+							</div>							
+							<p>Your application has been submitted successfully</p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+

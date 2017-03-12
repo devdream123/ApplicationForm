@@ -1,0 +1,269 @@
+/*General*/
+
+body{
+	width:100%;
+	margin:auto;
+	position:relative;
+}
+
+/*Application Form*/
+
+.form-container{
+	width:50%;
+	margin:0 auto;
+	margin-top:10%;
+	padding:50px;
+	border-style: solid;
+	border-width: 2px;
+	border-color:  #D0CBCB;
+}
+
+.form-header h1{
+	background: -moz-linear-gradient(left, rgba(189,189,189,1) 0%, rgba(181,181,181,1) 23%, rgba(173,173,173,1) 49%, rgba(212,212,212,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(189,189,189,1)), color-stop(23%, rgba(181,181,181,1)), color-stop(49%, rgba(173,173,173,1)), color-stop(100%, rgba(212,212,212,1)));
+	background: -webkit-linear-gradient(left, rgba(189,189,189,1) 0%, rgba(181,181,181,1) 23%, rgba(173,173,173,1) 49%, rgba(212,212,212,1) 100%);
+	background: -o-linear-gradient(left, rgba(189,189,189,1) 0%, rgba(181,181,181,1) 23%, rgba(173,173,173,1) 49%, rgba(212,212,212,1) 100%);
+	padding:10px;
+}
+
+.form-name-field legend, .label-option-container legend, .dropdown-container legend{
+	font-size:20px;
+	font-style: none;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.form-name-field input[type="text"]{
+	width:70%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin: auto;
+}
+
+.label-option-container{
+	padding-top:20px;
+}
+
+/*Form CSS difficulty options*/
+
+.form-content ul{
+	list-style: none;
+	margin:auto;
+	padding-top:10px;
+}
+
+.label-option-container li{
+	display:inline-block;
+}
+
+.label-option-container li label{
+	cursor:pointer;
+	background: #F17327;
+	border-radius: 50px;
+	border:none;
+	position:relative;
+	left:-40px;
+	padding:15px 40px;
+	text-align: center;
+	cursor:pointer;
+	width:100%;
+	margin-right:50px;	
+	font-size:17px;
+	font-weight: bold;
+}
+
+.label-option-container li:after{
+	  content: ".";
+	  display: block;
+	  height: 0;
+	  clear: both;
+	  visibility: hidden;
+	  padding-top:30px;	  
+}
+
+.label-option-container li label:hover{
+	background: #F88B2F;
+
+}
+.label-option-container li input{
+	display: none;
+}
+.label-option-container li input:checked+label{
+	background: #FFFFFF;
+	border: 2px solid #F17327;
+}
+
+/*Form drop-down list*/
+
+.dropdown-container{
+	padding-bottom:40px;
+}
+
+.dropdown-container select, option {
+	width:70%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin: auto;
+	font-size: 15px;
+}
+
+.checkbox-container{
+	padding-bottom:40px;
+	float:left;
+}
+
+.checkbox-container input[type="checkbox"] {
+	width:40px;
+	height:40px;
+	border:1px solid;
+	margin:0 auto;
+	background: none;
+}
+
+.checkbox-container label{
+	font-size:18px;
+	padding-left:20px;
+	position:relative;
+	top:-15px;
+}
+
+/*Submit button*/
+
+.btn-submit-container{
+	padding-top:40px;
+}
+.btn-submit{
+	background: #E71107 ;
+	color:#FFFFFF;
+	border-radius: 50px;
+	border:none;
+	outline: none;
+	padding:10px 40px;
+	cursor:pointer;
+	margin: 0 auto;
+	float:right;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-size:15px;
+}
+
+.btn-submit:hover{
+	background: #FB4646;
+}
+
+/*Modal*/
+
+.form-modal{
+	display:none;
+    position: fixed; 
+    padding-top: 50px; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.2);  
+}
+
+.form-modal-content{
+	background:#FFFFFF;
+	margin:auto;
+	padding: 20px;
+	border:2px solid #E18748;
+    width: 80%;
+    position:relative;
+    top:30%;
+    border-radius:5px;
+}
+
+.form-modal-content p{
+	font-size:20px;
+}
+
+.form-modal-content p:before{
+	content:'✔';
+	font-size:50px;
+	padding:10px;
+}
+
+.close-modal{
+	color:#BABABA;
+	cursor:pointer;
+	float:right;
+	font-size:30px;
+	font-weight: bold;
+}
+
+.close-modal:hover{
+	color:#F17327;
+}
+
+/*Responsive*/
+
+@media only screen  and (max-width:800px)
+{
+	body{
+		width:80%;
+	}
+
+	.form-container{
+		padding-bottom: 50%;
+	}
+
+	.form-header h1{
+		width:100%;
+		font-size:20px;
+	}
+
+	.form-name-field input[type="text"]{
+		width:100%;
+	}
+
+	.dropdown-container select, option {
+		width:100%;
+	}
+
+	.label-option-container li label{
+		left:-40px;
+		padding:15px 40px;
+		display: block;
+		width:40%;
+		float:left;
+		margin-right:50px;	
+	}
+
+	.label-option-container li:after{
+		  content: ".";
+		  display: block;
+		  height: 0;
+		  clear: both;
+		  visibility: hidden;
+		  padding-top:30px;	  
+	}
+
+	.checkbox-container label{
+		float:left;
+		position: relative;
+		top:0;
+		right:10%;
+	}
+
+	.checkbox-container input[type="checkbox"] {
+		width:25px;
+		height:25px;
+	}
+
+	.btn-submit{
+		float:left;
+		position: relative;
+		top:5%;
+		right:80%;
+		padding:10px 40px;
+		margin: 0 80%;
+		display: block;
+	}
+
+}

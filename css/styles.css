@@ -74,12 +74,12 @@ body{
 }
 
 .label-option-container li:after{
-	  content: ".";
-	  display: block;
-	  height: 0;
-	  clear: both;
-	  visibility: hidden;
-	  padding-top:30px;	  
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	padding-top:30px;	  
 }
 
 .label-option-container li label:hover{
@@ -157,15 +157,15 @@ body{
 
 .form-modal{
 	display:none;
-    position: fixed; 
-    padding-top: 50px; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%;
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.2);  
+    	position: fixed; 
+    	padding-top: 50px; 
+    	z-index: 1; 
+    	left: 0;
+    	top: 0;
+    	width: 100%; 
+   	height: 100%;
+    	overflow: auto; 
+    	background-color: rgba(0, 0, 0, 0.2);  
 }
 
 .form-modal-content{
@@ -173,10 +173,10 @@ body{
 	margin:auto;
 	padding: 20px;
 	border:2px solid #E18748;
-    width: 80%;
-    position:relative;
-    top:30%;
-    border-radius:5px;
+    	width: 80%;
+    	position:relative;
+    	top:30%;
+    	border-radius:5px;
 }
 
 .form-modal-content p{
